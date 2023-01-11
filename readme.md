@@ -1,4 +1,3 @@
-
 # My NeoVim Configuration
 
 ## Plugins That I Am Using
