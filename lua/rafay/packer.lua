@@ -76,7 +76,10 @@ use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-dev
   use('jwalton512/vim-blade')
   use 'karb94/neoscroll.nvim'
   use('ggandor/leap.nvim')
-
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
 
 end)
 
