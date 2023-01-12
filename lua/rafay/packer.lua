@@ -81,8 +81,15 @@ use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-dev
       config = function() require("nvim-autopairs").setup {} end
   }
   use {'glepnir/dashboard-nvim'}
-  use{'liuchengxu/vista.vim'}
-  use{'natecraddock/sessions.nvim'}
+  use({
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    module = "persistence",
+    config = function()
+      require("persistence").setup()
+    end,
+  })
 
+  use('chaoren/vim-wordmotion')
 end)
 
