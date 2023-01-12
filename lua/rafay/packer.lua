@@ -80,6 +80,9 @@ use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-dev
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
   }
+  use {'glepnir/dashboard-nvim'}
+  use{'liuchengxu/vista.vim'}
+  use{'natecraddock/sessions.nvim'}
 
 end)
 
